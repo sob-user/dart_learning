@@ -7,8 +7,8 @@ Random random = new Random();
 alternateRandom() {
   int zeroToNine = random.nextInt(58 - 48) + 48;
   int aUppertoZUpper = random.nextInt(91 - 65) + 65;
-  int aLowerToALower = random.nextInt(123 - 97) + 97;
-  var asciiInterval = [zeroToNine, aUppertoZUpper, aLowerToALower];
+  int aLowerToZLower = random.nextInt(123 - 97) + 97;
+  var asciiInterval = [zeroToNine, aUppertoZUpper, aLowerToZLower];
 
   return String.fromCharCode(
       asciiInterval[random.nextInt(asciiInterval.length)]);
